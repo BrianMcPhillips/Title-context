@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Controls = () => {
-
+  // Text state
+  // setText function
   const handleChange = ({ target }) => {
 
   }

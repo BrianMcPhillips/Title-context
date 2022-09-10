@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { TitleContext } from '../../context/TitleContext';
 
 const Controls = () => {
-  // Text state
-  // setText function
-  const handleChange = ({ target }) => {
+  const { title, setTitle } = useContext(TitleContext);
 
-  }
+  const handleChange = ({ target }) => {
+    setTitle(target.value);
+  };
 
   return (
-    <input type="text" value={} onChange={handleChange()} />
-  )
+    <input type="text" value={title} onChange={handleChange()} />
+  );
 };
 
 export default Controls;

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { TitleContext } from '../../context/TitleContext';
 
 const Display = () => {
-  // Text state
+  const { text } = useContext(TitleContext);
+
   return (
-    <h1>{}</h1>
+    <h1>{text}</h1>
   );
 };
 
